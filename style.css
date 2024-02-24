@@ -1,0 +1,197 @@
+/* Загальні стилі */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Стилі для контейнера з логотипом та соцмережами */
+.header-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  height: 300px;
+  background-image: url(Photo/Rectangle\ 63.png);
+}
+
+.navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.4); 
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin-top: 5px;
+}
+
+.navigation ul li {
+  display: inline-block;
+  margin-right: 18.5%;
+}
+
+.navigation ul li:first-child {
+  margin-left: 0%;
+}
+
+.navigation ul li:last-child {
+  margin-right: 0%;
+}
+
+.navigation ul li a {
+  color: #525151;
+  text-decoration: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.navigation ul li a:hover {
+  color: #000000;
+}
+
+.text-container {
+  text-align: center;
+}
+
+.text-container h1 {
+  margin: 0;
+  font-family: 'Cormorant Garamond';
+  font-weight: 400;
+  font-size: 150px; /* Змінив розмір шрифту */
+  letter-spacing: 30px; /* Змінив відстань між літерами */
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.text-container p {
+  margin: 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-size: 30px; /* Змінив розмір шрифту */
+  line-height: 30px;
+  color: #000000;
+  padding-top: 10px;
+}
+
+.doting-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot {
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.social-icons {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 999;
+}
+
+.social-icons a {
+  margin-left: 10px;
+}
+
+.social-icons a img {
+  width: 15px; /* Змінив розмір на 15 пікселів */
+  height: 15px; /* Змінив розмір на 15 пікселів */
+  margin-left: 10px;
+}
+
+/* Стилі для каруселі з фото */
+.carousel {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-img {
+  width: 100%;
+  display: none;
+}
+
+.carousel img:first-child {
+  display: block;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  color: black;
+  font-size: 30px; /* Змінив розмір шрифту на 20 пікселів */
+  padding: 10px; /* Змінив відступи на 10 пікселів */
+  cursor: pointer;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
+/* Медіа-запити для адаптивності */
+@media only screen and (max-width: 480px) {
+  .navigation {
+    padding: 10px 10%;
+  }
+  .navigation ul {
+    margin: 0;
+    padding: 0;
+  }
+  .navigation ul li{
+    margin-right: 20px;
+  }
+  .navigation ul li a{
+    margin: 0 auto;
+    font-size: 10px;
+    letter-spacing: -0.03em;
+  }  
+  .header-container h1 {
+    font-size: 45px;
+    letter-spacing: 2vw;
+  }
+  .header-container p {
+    font-size: 15px;
+    line-height: 2vw;
+  }
+  .social-icons {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 999;
+  }
+  .social-icons a {
+    margin-left: 5px;
+  }
+  .social-icons a img {
+    width: 5px; /* Змінив розмір на 15 пікселів */
+    height: 5px; /* Змінив розмір на 15 пікселів */
+    margin-left: 5px;
+  }
+}
+
+
+/*@media only screen and (max-width: 991px){
+
+}*/
