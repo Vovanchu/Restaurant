@@ -4,6 +4,12 @@ body {
   padding: 0;
 }
 
+a{
+  color: black;
+  text-decoration: none;    
+  cursor: pointer;
+}
+
 /* Стилі для контейнера з логотипом та соцмережами */
 .header-container {
   position: relative;
@@ -137,6 +143,8 @@ body {
 .about_us{
   background-image: url(Photo/Rectangle\ 62.png);
   height: 300px;
+  border-bottom: solid;
+
 }
 
 .about_us h1{
@@ -158,13 +166,6 @@ body {
   line-height: 37px;
   text-align: center;
   letter-spacing: 0.1em;
-}
-
-.about_us_line{
-  width: 100%;
-  height: 2px;
-  margin-bottom: 20px;
-  background-color: #000000;
 }
 
 /*Breakfast*/
@@ -216,11 +217,15 @@ body {
 
 /*footer*/
 .info {
+  position: absolute;
   display: flex;
   justify-content: space-around;
   background-image: url(Photo/Rectangle\ 96.png);
+  width: 100%;
+  background-repeat: no-repeat;
 }
 
+/*Contact-info*/
 .contact-info {
   display: flex;
   flex-direction: column;
@@ -245,8 +250,8 @@ body {
 }
 
 .contact-info-item img {
-  width: 14px;
-  height: 12px;
+  width: 18px;
+  height: 14px;
   margin-right: 10px;
 }
 
@@ -263,15 +268,89 @@ body {
   color: #0E0D0D;
 }
 
-.contact-info-item a {
-  color: black;
-  text-decoration: none;    
-  cursor: pointer;
+/*social_networking*/
+.social_networking h2{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+
+  color: #000000;
 }
 
-.social_networking{
-  
+.social_networking img{
+  width: 18px;
+  height: 15px;
 }
+
+.social_networking a{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+
+  color: #000000;
+}
+
+/*location*/
+.location{
+  width: 300px;
+}
+
+.location h2{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+
+  color: #000000;
+}
+
+.location p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+
+  color: #0E0D0D;
+}
+.contact-info, .social_networking, .location, .map-container {
+  flex: 1; /* Встановлюємо рівну частку простору для кожного блоку, щоб вони займали однакову ширину */
+  max-width: 300px; /* Встановлюємо максимальну ширину для кожного блоку, щоб вони не розтягувалися надто широко */
+  margin: 0 10px; /* Додаємо зовнішні відступи між блоками */
+}
+
+/*Map*/
+.map {
+  position: relative; /* Позиціонуємо мапу відносно її контейнера */
+}
+
+.map-button {
+  position: absolute; /* Розміщуємо кнопку абсолютно відносно контейнера */
+  bottom: 10px; /* Відстань від нижнього краю */
+  left: 10px; /* Відстань від лівого краю */
+  z-index: 1; /* Значення z-index визначає "вертикальний" порядок елементів: елемент з більшим значенням z-index завжди перебуває вище, ніж елементи з меншим значенням. Встановлюємо вище значення z-index, щоб кнопка знаходилася поверх інших елементів. */
+  background-color: transparent; /* Прозорий фон кнопки */
+  border: 2px solid #000; /* Гранична лінія */
+  color: #000; /* Колір тексту */
+  padding: 10px 20px; /* Внутрішній відступ */
+  cursor: pointer; /* Курсор при наведенні */
+  transition: all 0.3s ease; /* Плавність зміни стилів */
+}
+
+.map-button:hover {
+  background-color: #000; /* Змінюємо фон при наведенні */
+  color: #fff; /* Змінюємо колір тексту при наведенні */
+}
+
 
 /* Медіа-запити для адаптивності 
 @media only screen and (max-width: 480px) {
