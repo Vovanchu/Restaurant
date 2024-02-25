@@ -96,23 +96,6 @@ body {
   padding-right: 5px;
 }
 
-.social-icons {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  z-index: 999;
-}
-
-.social-icons a {
-  margin-left: 10px;
-}
-
-.social-icons a img {
-  width: 15px; /* Змінив розмір на 15 пікселів */
-  height: 15px; /* Змінив розмір на 15 пікселів */
-  margin-left: 10px;
-}
-
 /* Стилі для каруселі з фото */
 .carousel {
   width: 100%;
@@ -150,7 +133,6 @@ body {
   right: 10px;
 }
 
-
 /*About us*/
 .about_us{
   background-image: url(Photo/Rectangle\ 62.png);
@@ -183,6 +165,112 @@ body {
   height: 2px;
   margin-bottom: 20px;
   background-color: #000000;
+}
+
+/*Breakfast*/
+.breakfast {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the content horizontally */
+}
+
+.breakfast h1 {
+  position: relative;
+  text-align: center;
+  padding-bottom: 90px;
+
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 73px;
+  letter-spacing: 0.1em;
+  font-style: normal;
+
+  width: 100%; 
+}
+
+.breakfast-item {
+  width: 540px;
+  height: 100%;
+  padding-right: 20px;
+}
+
+.breakfast-item img {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+  width: 540px;
+}
+
+.breakfast-item p {
+  text-align: center;
+
+  font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-family: 'Montserrat';
+}
+
+/*footer*/
+.info {
+  display: flex;
+  justify-content: space-around;
+  background-image: url(Photo/Rectangle\ 96.png);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-info h2{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+  
+  color: #0E0D0D;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-info-item img {
+  width: 14px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.contact-info-item p {
+  margin: 0;
+
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  font-style: normal;
+  
+  color: #0E0D0D;
+}
+
+.contact-info-item a {
+  color: black;
+  text-decoration: none;    
+  cursor: pointer;
+}
+
+.social_networking{
+  
 }
 
 /* Медіа-запити для адаптивності 
