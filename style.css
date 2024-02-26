@@ -354,92 +354,8 @@ a{
 
 
 
+/* Основні стилі для екранів шириною менше 768px (смартфони та планшети) */
 @media only screen and (max-width: 768px) {
-  .header-container {
-    height: 200px;
-  }
-
-  .navigation ul li {
-    margin-right: 10%;
-  }
-
-  .text-container h1 {
-    font-size: 80px;
-    letter-spacing: 15px;
-  }
-
-  .text-container p {
-    font-size: 18px;
-  }
-
-  .carousel-control {
-    font-size: 24px;
-    padding: 5px;
-  }
-
-  .about_us h1 {
-    font-size: 40px;
-    line-height: 50px;
-  }
-
-  .about_us p {
-    font-size: 18px;
-    line-height: 23px;
-  }
-
-  .breakfast h1 {
-    font-size: 40px;
-    line-height: 50px;
-    padding-bottom: 40px;
-  }
-
-  .breakfast-item {
-    width: 100%;
-    padding-right: 0;
-  }
-
-  .breakfast-item img {
-    width: 100%;
-  }
-
-  .breakfast-item p {
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  .info {
-    flex-direction: column;
-  }
-
-  .contact-info {
-    align-items: center;
-    text-align: center;
-  }
-
-  .contact-info h2 {
-    font-size: 18px;
-    line-height: 22px;
-  }
-
-  .contact-info-item {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 15px;
-  }
-
-  .contact-info-item img {
-    margin-bottom: 5px;
-  }
-
-  .contact-info-item p {
-    font-size: 16px;
-    line-height: 20px;
-  }
-}
-
-
-@media only screen and (min-width: 767px) and (max-width: 991px) {
-  /* Update styles for the header container */
   .header-container {
     height: 200px;
   }
@@ -452,18 +368,6 @@ a{
     font-size: 100px;
     letter-spacing: 15px;
   }
-
-  .text-container p {
-    font-size: 20px;
-  }
-
-  /* Update styles for the carousel */
-  .carousel-control {
-    font-size: 20px;
-    padding: 5px;
-  }
-
-  /* Update styles for the about us section */
   .about_us h1 {
     font-size: 40px;
     line-height: 50px;
@@ -473,11 +377,16 @@ a{
     font-size: 20px;
     line-height: 25px;
   }
+  .text-container p {
+    font-size: 20px;
+  }
 
-  /* Update styles for the breakfast section */
+  .carousel-control {
+    font-size: 20px;
+  }
+
   .breakfast h1 {
     font-size: 40px;
-    line-height: 50px;
     padding-bottom: 50px;
   }
 
@@ -490,163 +399,108 @@ a{
     width: 100%;
   }
 
-  .breakfast-item p {
+  .contact-info h2,
+  .social_networking h2,
+  .location h2 {
     font-size: 18px;
-    line-height: 22px;
-  }
-
-  /* Update styles for the footer section */
-  .info {
-    flex-direction: column;
-  }
-
-  .contact-info {
-    align-items: center;
-  }
-
-  .contact-info h2 {
-    font-size: 18px;
-    line-height: 22px;
   }
 
   .contact-info-item p {
     font-size: 16px;
-    line-height: 20px;
   }
+  
 }
 
-
-@media only screen and (min-width: 992px) and (max-width: 1023px) {
-  /* Update styles for header-container */
+/* Основні стилі для екранів шириною від 769px до 1024px (планшети та невеликі ноутбуки) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   .header-container {
-    height: 250px; 
-  }
-
-  /* Update styles for navigation */
-  .navigation {
-    height: 30px; 
+    height: 250px;
   }
 
   .navigation ul li {
-    margin-right: 15%; 
+    margin-right: 15%;
   }
 
-  /* Update styles for text-container */
   .text-container h1 {
     font-size: 120px;
-    letter-spacing: 20px; 
+    letter-spacing: 25px;
   }
 
   .text-container p {
-    font-size: 24px; 
+    font-size: 25px;
   }
-
-  /* Update styles for carousel control */
-  .carousel-control {
-    font-size: 24px; 
-    padding: 8px;
-  }
-
-  .about_us {
-    height: 250px; 
-  }
-
   .about_us h1 {
-    font-size: 48px; 
+    font-size: 50px;
     line-height: 60px;
   }
 
   .about_us p {
-    font-size: 24px; 
-    line-height: 30px; 
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .carousel-control {
+    font-size: 25px;
   }
 
-  /* Update styles for breakfast */
   .breakfast h1 {
-    padding-bottom: 60px; 
-    font-size: 48px; 
-    line-height: 58px; 
+    font-size: 50px;
+    padding-bottom: 70px;
   }
 
-  .breakfast-item {
-    width: 100%;
-    padding-right: 0; 
-  }
-
-  .breakfast-item img {
-    width: 100%; 
-  }
-
-  .breakfast-item p {
-    font-size: 18px; 
-    line-height: 22px; 
-  }
-
-  .contact-info h2 {
-    font-size: 18px; 
-    line-height: 22px; 
+  .contact-info h2,
+  .social_networking h2,
+  .location h2 {
+    font-size: 20px;
   }
 
   .contact-info-item p {
-    font-size: 16px; 
-    line-height: 20px;
+    font-size: 18px;
   }
 }
 
-
-
-
-
-@media only screen and (min-width: 1024px) {
+/* Основні стилі для екранів шириною більше 1024px (ноутбуки та настільні комп'ютери) */
+@media only screen and (min-width: 1025px) {
   .header-container {
-    height: 400px; 
+    height: 300px;
   }
 
   .navigation ul li {
-    margin-right: 2%; 
+    margin-right: 18.5%;
   }
 
   .text-container h1 {
-    font-size: 200px; 
-    letter-spacing: 50px; 
+    font-size: 150px;
+    letter-spacing: 30px;
   }
 
   .text-container p {
-    font-size: 40px; 
+    font-size: 30px;
+  }
+  .about_us h1 {
+    font-size: 64px;
+    line-height: 78px;
   }
 
+  .about_us p {
+    font-size: 30px;
+    line-height: 37px;
+  }
   .carousel-control {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .breakfast h1 {
-    font-size: 80px; 
-    padding-bottom: 120px; 
+    font-size: 60px;
+    padding-bottom: 90px;
   }
 
-  .breakfast-item {
-    width: 800px; 
-  }
-
-  .breakfast-item img {
-    width: 800px; 
-  }
-
-  .info {
-    flex-direction: row; 
-  }
-
-  .contact-info {
-    align-items: center; 
-  }
-
-  .contact-info h2 {
-    font-size: 28px; 
-    line-height: 34px; 
+  .contact-info h2,
+  .social_networking h2,
+  .location h2 {
+    font-size: 21px;
   }
 
   .contact-info-item p {
-    font-size: 24px; 
-    line-height: 28px; 
+    font-size: 19px;
   }
 }
