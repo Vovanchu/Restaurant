@@ -1,28 +1,49 @@
 // script.js
-let slideIndex = 0;
-const slides = document.querySelectorAll('.carousel-img');
+// Отримуємо елементи каруселі
+var carousel = document.querySelector('.carousel');
+var carouselItems = carousel.querySelectorAll('.carousel-item');
 
-function showSlide(n) {
-    slides.forEach(slide => slide.style.display = 'none');
-    if (n >= slides.length) slideIndex = 0;
-    if (n < 0) slideIndex = slides.length - 1;
-    slides[slideIndex].style.display = 'block';
+// Додаємо слухачів подій на кнопки перемикання
+document.querySelector('.carousel-control-prev').addEventListener('click', function() {
+  moveCarousel(-1);
+});
+
+document.querySelector('.carousel-control-next').addEventListener('click', function() {
+  moveCarousel(1);
+});
+
+// Функція переміщення каруселі
+function moveCarousel(direction) {
+  var currentSlide = carousel.querySelector('.active');
+  var nextSlide;
+
+  if (direction === -1) {
+    nextSlide = currentSlide.previousElementSibling || carouselItems[carouselItems.length - 1];
+  } else {
+    nextSlide = currentSlide.nextElementSibling || carouselItems[0];
+  }
+
+  currentSlide.classList.remove('active');
+  nextSlide.classList.add('active');
 }
 
-function nextSlide() {
-    slideIndex++;
-    showSlide(slideIndex);
-}
+// Додамо автоматичну зміну слайдів
+var intervalId = setInterval(function() {
+  moveCarousel(1); 
+}, 5000); 
 
-function prevSlide() {
-    slideIndex--;
-    showSlide(slideIndex);
-}
+// Зупиняємо автоматичну зміну слайдів при наведенні курсора на карусель
+carousel.addEventListener('mouseover', function() {
+  clearInterval(intervalId);
+});
 
-// Автоматична зміна слайдів через 3 секунди
-setInterval(() => {
-    nextSlide();
-}, 15000);
+// Поновлюємо автоматичну зміну слайдів при відведенні курсора від каруселі
+carousel.addEventListener('mouseleave', function() {
+  intervalId = setInterval(function() {
+    moveCarousel(1); 
+  }, 5000); 
+});
+
 
 /*Copy password*/
 document.getElementById("wifiPassword").addEventListener("click", function() {
@@ -45,4 +66,3 @@ document.getElementById("emailLink").addEventListener("click", function() {
     // Відкриваємо посилання в новому вікні
     window.open(mailtoLink, '_blank');
 });
-
