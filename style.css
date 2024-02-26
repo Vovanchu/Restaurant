@@ -352,47 +352,301 @@ a{
 }
 
 
-/* Медіа-запити для адаптивності 
-@media only screen and (max-width: 480px) {
-  .navigation {
-    padding: 10px 10%;
+
+
+@media only screen and (max-width: 768px) {
+  .header-container {
+    height: 200px;
   }
-  .navigation ul {
-    margin: 0;
-    padding: 0;
+
+  .navigation ul li {
+    margin-right: 10%;
   }
-  .navigation ul li{
-    margin-right: 20px;
+
+  .text-container h1 {
+    font-size: 80px;
+    letter-spacing: 15px;
   }
-  .navigation ul li a{
-    margin: 0 auto;
-    font-size: 10px;
-    letter-spacing: -0.03em;
-  }  
-  .header-container h1 {
-    font-size: 45px;
-    letter-spacing: 2vw;
+
+  .text-container p {
+    font-size: 18px;
   }
-  .header-container p {
-    font-size: 15px;
-    line-height: 2vw;
+
+  .carousel-control {
+    font-size: 24px;
+    padding: 5px;
   }
-  .social-icons {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    z-index: 999;
+
+  .about_us h1 {
+    font-size: 40px;
+    line-height: 50px;
   }
-  .social-icons a {
-    margin-left: 5px;
+
+  .about_us p {
+    font-size: 18px;
+    line-height: 23px;
   }
-  .social-icons a img {
-    width: 5px;
-    height: 5px;
-    margin-left: 5px;
+
+  .breakfast h1 {
+    font-size: 40px;
+    line-height: 50px;
+    padding-bottom: 40px;
+  }
+
+  .breakfast-item {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .breakfast-item img {
+    width: 100%;
+  }
+
+  .breakfast-item p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-info h2 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .contact-info-item {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .contact-info-item img {
+    margin-bottom: 5px;
+  }
+
+  .contact-info-item p {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
-*/
 
-/*@media only screen and (max-width: 991px){
-}*/
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+  /* Update styles for the header container */
+  .header-container {
+    height: 200px;
+  }
+
+  .navigation ul li {
+    margin-right: 10%;
+  }
+
+  .text-container h1 {
+    font-size: 100px;
+    letter-spacing: 15px;
+  }
+
+  .text-container p {
+    font-size: 20px;
+  }
+
+  /* Update styles for the carousel */
+  .carousel-control {
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  /* Update styles for the about us section */
+  .about_us h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .about_us p {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  /* Update styles for the breakfast section */
+  .breakfast h1 {
+    font-size: 40px;
+    line-height: 50px;
+    padding-bottom: 50px;
+  }
+
+  .breakfast-item {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .breakfast-item img {
+    width: 100%;
+  }
+
+  .breakfast-item p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  /* Update styles for the footer section */
+  .info {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    align-items: center;
+  }
+
+  .contact-info h2 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .contact-info-item p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  /* Update styles for header-container */
+  .header-container {
+    height: 250px; 
+  }
+
+  /* Update styles for navigation */
+  .navigation {
+    height: 30px; 
+  }
+
+  .navigation ul li {
+    margin-right: 15%; 
+  }
+
+  /* Update styles for text-container */
+  .text-container h1 {
+    font-size: 120px;
+    letter-spacing: 20px; 
+  }
+
+  .text-container p {
+    font-size: 24px; 
+  }
+
+  /* Update styles for carousel control */
+  .carousel-control {
+    font-size: 24px; 
+    padding: 8px;
+  }
+
+  .about_us {
+    height: 250px; 
+  }
+
+  .about_us h1 {
+    font-size: 48px; 
+    line-height: 60px;
+  }
+
+  .about_us p {
+    font-size: 24px; 
+    line-height: 30px; 
+  }
+
+  /* Update styles for breakfast */
+  .breakfast h1 {
+    padding-bottom: 60px; 
+    font-size: 48px; 
+    line-height: 58px; 
+  }
+
+  .breakfast-item {
+    width: 100%;
+    padding-right: 0; 
+  }
+
+  .breakfast-item img {
+    width: 100%; 
+  }
+
+  .breakfast-item p {
+    font-size: 18px; 
+    line-height: 22px; 
+  }
+
+  .contact-info h2 {
+    font-size: 18px; 
+    line-height: 22px; 
+  }
+
+  .contact-info-item p {
+    font-size: 16px; 
+    line-height: 20px;
+  }
+}
+
+
+
+
+
+@media only screen and (min-width: 1024px) {
+  .header-container {
+    height: 400px; 
+  }
+
+  .navigation ul li {
+    margin-right: 2%; 
+  }
+
+  .text-container h1 {
+    font-size: 200px; 
+    letter-spacing: 50px; 
+  }
+
+  .text-container p {
+    font-size: 40px; 
+  }
+
+  .carousel-control {
+    font-size: 40px;
+  }
+
+  .breakfast h1 {
+    font-size: 80px; 
+    padding-bottom: 120px; 
+  }
+
+  .breakfast-item {
+    width: 800px; 
+  }
+
+  .breakfast-item img {
+    width: 800px; 
+  }
+
+  .info {
+    flex-direction: row; 
+  }
+
+  .contact-info {
+    align-items: center; 
+  }
+
+  .contact-info h2 {
+    font-size: 28px; 
+    line-height: 34px; 
+  }
+
+  .contact-info-item p {
+    font-size: 24px; 
+    line-height: 28px; 
+  }
+}
