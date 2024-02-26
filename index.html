@@ -1,652 +1,147 @@
-/* Загальні стилі */
-body {
-  margin: 0;
-  padding: 0;
-}
-
-a{
-  color: black;
-  text-decoration: none;    
-  cursor: pointer;
-}
-
-/* Стилі для контейнера з логотипом та соцмережами */
-.header-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
-  width: 100%;
-  height: 300px;
-  background-image: url(Photo/Rectangle\ 63.png);
-}
-
-.navigation {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 40px;
-  text-align: center;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.4); 
-}
-
-.navigation ul {
-  list-style-type: none;
-  margin-top: 5px;
-}
-
-.navigation ul li {
-  display: inline-block;
-  margin-right: 18.5%;
-}
-
-.navigation ul li:first-child {
-  margin-left: 0%;
-}
-
-.navigation ul li:last-child {
-  margin-right: 0%;
-}
-
-.navigation ul li a {
-  color: #525151;
-  text-decoration: none;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-}
-
-.navigation ul li a:hover {
-  color: #000000;
-}
-
-.text-container {
-  text-align: center;
-}
-
-.text-container h1 {
-  margin: 0;
-  font-family: 'Cormorant Garamond';
-  font-weight: 400;
-  font-size: 150px; /* Змінив розмір шрифту */
-  letter-spacing: 30px; /* Змінив відстань між літерами */
-  color: #000000;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.text-container p {
-  margin: 0;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-size: 30px; /* Змінив розмір шрифту */
-  line-height: 30px;
-  color: #000000;
-  padding-top: 10px;
-}
-
-.doting-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.dot {
-  font-size: 20px;
-  font-weight: bold;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-/* Стилі для каруселі з фото */
-.carousel {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  position: relative;
-}
-
-.carousel-img {
-  width: 100%;
-  display: none;
-}
-
-.carousel img:first-child {
-  display: block;
-}
-
-.carousel-control {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.5);
-  border: none;
-  color: black;
-  font-size: 30px;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.carousel-control.prev {
-  left: 10px;
-}
-
-.carousel-control.next {
-  right: 10px;
-}
-
-/*About us*/
-.about_us{
-  background-image: url(Photo/Rectangle\ 62.png);
-  height: 300px;
-  border-bottom: solid;
-
-}
-
-.about_us h1{
-  margin: 0;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 64px;
-  line-height: 78px;
-  text-align: center;
-  letter-spacing: 0.1em;
-}
-
-.about_us P{
-  font-family: 'Montserrat Alternates';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 37px;
-  text-align: center;
-  letter-spacing: 0.1em;
-}
-
-/*Breakfast*/
-.breakfast {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center; /* Center the content horizontally */
-}
-
-.breakfast h1 {
-  position: relative;
-  text-align: center;
-  padding-bottom: 90px;
-
-  font-family: 'Montserrat';
-  font-weight: 400;
-  font-size: 60px;
-  line-height: 73px;
-  letter-spacing: 0.1em;
-  font-style: normal;
-
-  width: 100%; 
-}
-
-.breakfast-item {
-  width: 540px;
-  height: 100%;
-  padding-right: 20px;
-}
-
-.breakfast-item img {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
-  width: 540px;
-}
-
-.breakfast-item p {
-  text-align: center;
-
-  font-style: normal;
-  font-weight: 300;
-  font-size: 21px;
-  line-height: 26px;
-  text-align: center;
-  letter-spacing: 0.1em;
-  font-family: 'Montserrat';
-}
-
-/*footer*/
-.info {
-  position: absolute;
-  display: flex;
-  justify-content: space-around;
-  background-image: url(Photo/Rectangle\ 96.png);
-  width: 100%;
-  background-repeat: no-repeat;
-}
-
-/*Contact-info*/
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.contact-info h2{
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-  letter-spacing: 0.1em;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Щастя</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- Лого,соцмережі та нав-меню -->
+    <div class="header-container">
+        <nav class="navigation">
+          <ul>
+              <li><a href="#">ГОЛОВНА </a></li>
+              <li><a href="#">МЕНЮ</a></li>
+              <li><a href="#">ГАЛЕРЕЯ</a></li>
+              <li><a href="#">РЕЗЕРВ</a></li>
+          </ul>
+        </nav>
+        <div>
+          <div class="text-container">
+            <h1>ЩАСТЯ</h1>
+            <div class="doting-container">
+              <p class="dot">&#183;</p>
+              <p> Ресторан-Кондитерська</p>
+              <p class="dot">&#183;</p>
+            </div>
+          </div>
+        </div>
+      </div>
   
-  color: #0E0D0D;
-}
-
-.contact-info-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.contact-info-item img {
-  width: 18px;
-  height: 14px;
-  margin-right: 10px;
-}
-
-.contact-info-item p {
-  margin: 0;
-
-  font-family: 'Montserrat';
-  font-weight: 500;
-  font-size: 19px;
-  line-height: 23px;
-  letter-spacing: 0.1em;
-  font-style: normal;
-  
-  color: #0E0D0D;
-}
-
-/*social_networking*/
-.social_networking h2{
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-  letter-spacing: 0.1em;
-
-  color: #000000;
-}
-
-.social_networking img{
-  width: 18px;
-  height: 15px;
-}
-
-.social_networking a{
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 0.1em;
-
-  color: #000000;
-}
-
-/*location*/
-.location{
-  width: 300px;
-}
-
-.location h2{
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-  letter-spacing: 0.1em;
-
-  color: #000000;
-}
-
-.location p {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 0.1em;
-
-  color: #0E0D0D;
-}
-.contact-info, .social_networking, .location, .map-container {
-  flex: 1; /* Встановлюємо рівну частку простору для кожного блоку, щоб вони займали однакову ширину */
-  max-width: 300px; /* Встановлюємо максимальну ширину для кожного блоку, щоб вони не розтягувалися надто широко */
-  margin: 0 10px; /* Додаємо зовнішні відступи між блоками */
-}
-
-/*Map*/
-.map {
-  position: relative; /* Позиціонуємо мапу відносно її контейнера */
-}
-
-.map-button {
-  position: absolute; /* Розміщуємо кнопку абсолютно відносно контейнера */
-  bottom: 10px; /* Відстань від нижнього краю */
-  left: 10px; /* Відстань від лівого краю */
-  z-index: 1; /* Значення z-index визначає "вертикальний" порядок елементів: елемент з більшим значенням z-index завжди перебуває вище, ніж елементи з меншим значенням. Встановлюємо вище значення z-index, щоб кнопка знаходилася поверх інших елементів. */
-  background-color: transparent; /* Прозорий фон кнопки */
-  border: 2px solid #000; /* Гранична лінія */
-  color: #000; /* Колір тексту */
-  padding: 10px 20px; /* Внутрішній відступ */
-  cursor: pointer; /* Курсор при наведенні */
-  transition: all 0.3s ease; /* Плавність зміни стилів */
-}
-
-.map-button:hover {
-  background-color: #000; /* Змінюємо фон при наведенні */
-  color: #fff; /* Змінюємо колір тексту при наведенні */
-}
-
-
-
-
-@media only screen and (max-width: 768px) {
-  .header-container {
-    height: 200px;
-  }
-
-  .navigation ul li {
-    margin-right: 10%;
-  }
-
-  .text-container h1 {
-    font-size: 80px;
-    letter-spacing: 15px;
-  }
-
-  .text-container p {
-    font-size: 18px;
-  }
-
-  .carousel-control {
-    font-size: 24px;
-    padding: 5px;
-  }
-
-  .about_us h1 {
-    font-size: 40px;
-    line-height: 50px;
-  }
-
-  .about_us p {
-    font-size: 18px;
-    line-height: 23px;
-  }
-
-  .breakfast h1 {
-    font-size: 40px;
-    line-height: 50px;
-    padding-bottom: 40px;
-  }
-
-  .breakfast-item {
-    width: 100%;
-    padding-right: 0;
-  }
-
-  .breakfast-item img {
-    width: 100%;
-  }
-
-  .breakfast-item p {
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  .info {
-    flex-direction: column;
-  }
-
-  .contact-info {
-    align-items: center;
-    text-align: center;
-  }
-
-  .contact-info h2 {
-    font-size: 18px;
-    line-height: 22px;
-  }
-
-  .contact-info-item {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 15px;
-  }
-
-  .contact-info-item img {
-    margin-bottom: 5px;
-  }
-
-  .contact-info-item p {
-    font-size: 16px;
-    line-height: 20px;
-  }
-}
-
-
-@media only screen and (min-width: 767px) and (max-width: 991px) {
-  /* Update styles for the header container */
-  .header-container {
-    height: 200px;
-  }
-
-  .navigation ul li {
-    margin-right: 10%;
-  }
-
-  .text-container h1 {
-    font-size: 100px;
-    letter-spacing: 15px;
-  }
-
-  .text-container p {
-    font-size: 20px;
-  }
-
-  /* Update styles for the carousel */
-  .carousel-control {
-    font-size: 20px;
-    padding: 5px;
-  }
-
-  /* Update styles for the about us section */
-  .about_us h1 {
-    font-size: 40px;
-    line-height: 50px;
-  }
-
-  .about_us p {
-    font-size: 20px;
-    line-height: 25px;
-  }
-
-  /* Update styles for the breakfast section */
-  .breakfast h1 {
-    font-size: 40px;
-    line-height: 50px;
-    padding-bottom: 50px;
-  }
-
-  .breakfast-item {
-    width: 100%;
-    padding-right: 0;
-  }
-
-  .breakfast-item img {
-    width: 100%;
-  }
-
-  .breakfast-item p {
-    font-size: 18px;
-    line-height: 22px;
-  }
-
-  /* Update styles for the footer section */
-  .info {
-    flex-direction: column;
-  }
-
-  .contact-info {
-    align-items: center;
-  }
-
-  .contact-info h2 {
-    font-size: 18px;
-    line-height: 22px;
-  }
-
-  .contact-info-item p {
-    font-size: 16px;
-    line-height: 20px;
-  }
-}
-
-
-@media only screen and (min-width: 992px) and (max-width: 1023px) {
-  /* Update styles for header-container */
-  .header-container {
-    height: 250px; 
-  }
-
-  /* Update styles for navigation */
-  .navigation {
-    height: 30px; 
-  }
-
-  .navigation ul li {
-    margin-right: 15%; 
-  }
-
-  /* Update styles for text-container */
-  .text-container h1 {
-    font-size: 120px;
-    letter-spacing: 20px; 
-  }
-
-  .text-container p {
-    font-size: 24px; 
-  }
-
-  /* Update styles for carousel control */
-  .carousel-control {
-    font-size: 24px; 
-    padding: 8px;
-  }
-
-  .about_us {
-    height: 250px; 
-  }
-
-  .about_us h1 {
-    font-size: 48px; 
-    line-height: 60px;
-  }
-
-  .about_us p {
-    font-size: 24px; 
-    line-height: 30px; 
-  }
-
-  /* Update styles for breakfast */
-  .breakfast h1 {
-    padding-bottom: 60px; 
-    font-size: 48px; 
-    line-height: 58px; 
-  }
-
-  .breakfast-item {
-    width: 100%;
-    padding-right: 0; 
-  }
-
-  .breakfast-item img {
-    width: 100%; 
-  }
-
-  .breakfast-item p {
-    font-size: 18px; 
-    line-height: 22px; 
-  }
-
-  .contact-info h2 {
-    font-size: 18px; 
-    line-height: 22px; 
-  }
-
-  .contact-info-item p {
-    font-size: 16px; 
-    line-height: 20px;
-  }
-}
-
-
-
-
-
-@media only screen and (min-width: 1024px) {
-  .header-container {
-    height: 400px; 
-  }
-
-  .navigation ul li {
-    margin-right: 2%; 
-  }
-
-  .text-container h1 {
-    font-size: 200px; 
-    letter-spacing: 50px; 
-  }
-
-  .text-container p {
-    font-size: 40px; 
-  }
-
-  .carousel-control {
-    font-size: 40px;
-  }
-
-  .breakfast h1 {
-    font-size: 80px; 
-    padding-bottom: 120px; 
-  }
-
-  .breakfast-item {
-    width: 800px; 
-  }
-
-  .breakfast-item img {
-    width: 800px; 
-  }
-
-  .info {
-    flex-direction: row; 
-  }
-
-  .contact-info {
-    align-items: center; 
-  }
-
-  .contact-info h2 {
-    font-size: 28px; 
-    line-height: 34px; 
-  }
-
-  .contact-info-item p {
-    font-size: 24px; 
-    line-height: 28px; 
-  }
-}
+    <!-- Карусель з фото -->
+    <div class="carousel">
+      <img src="Photo/1.png" alt="Фото ресторану" class="carousel-img">
+      <img src="Photo/2.png" alt="Фото ресторану" class="carousel-img">
+      <img src="Photo/3.png" alt="Фото ресторану" class="carousel-img">
+      <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+      <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+  </div>
+
+    <!-- Про нас -->
+  <div class="about_us">
+    <h1>Про нас</h1>
+    <p>«Щастя» - ресторан, побудований на комфорті та затишку. Спеціально для вас ми створили затишну атмосферу, об'єднавши смачну кухню, зручний інтер'єр і бездоганне обслуговування.
+      В «Щасті» вас оточує енергія тепла, впевненості та спокою. Ми раді дарувати вам нашу турботу, смачні страви та незабутній час.</p>
+  </div>
+
+  <!-- Сніданки фото -->
+  <div class="breakfast">
+    <h1>Наші сніданки</h1>
+    <div class="breakfast-item">
+      <img src="Photo/Rectangle 17.png" alt="Ванільні сирники">
+      <p>Ванільні сирники з повітряною маренгою, джемом на вибір (полуниця/карамель) та сезонними фруктами</p>
+    </div>
+    <div class="breakfast-item">
+      <img src="Photo/Rectangle 16.png" alt="Оладки з цукіні">
+      <p>Оладки з цукіні, гуакамоле, яйцем пашот та вʼяленими томатами- незмінний улюбленець наших гостей</p>
+    </div>
+    <div class="breakfast-item">
+      <img src="Photo/Rectangle 18.png" alt="Сніданок з лисичками">
+      <p>Сніданок з лисичками, мікс салатів, зеленим горошком та мусом із фети та грецького йогурту. Подається з яйцями (приготування на вибір) та хлібними чипсами</p>
+    </div>
+    <div class="breakfast-item">
+      <img src="Photo/Rectangle 14.png" alt="Сосиска із рубленого мʼяса">
+      <p>Оновлений баварський сніданок від «Щастя»
+        Сосиска із рубленого мʼяса, оката яєчня,цибуля,кріпі,томати та спаржева квасоля</p>
+    </div>
+    <div class="breakfast-item">
+      <img src="Photo/Rectangle 13.png" alt="Груша томлена у ванілі та кардамоні з шафраном">
+      <p>Груша томлена у ванілі та кардамоні з шафраном,гранолою і грецьким йогуртом. </p>
+    </div>
+    <div class="breakfast-item">
+      <img src="Photo/Rectangle 15.png" alt="Темна чіабата з хрусткою скоринкою">
+      <p>Темна чіабата з хрусткою скоринкою , ніжний сир Страчателла, томати конфі та домашній соус Песто</p>
+    </div>
+  </div>
+
+  <footer class="info">
+    <div class="contact-info">
+      <h2>Контактні дані</h2>
+      <div class="contact-info-item">
+        <img src="Photo/Phone.png" alt="Phone">
+        <p>
+          <a href="tel:+380635953330">063 595 3330</a>
+        </p>
+      </div>
+      <div class="contact-info-item">
+        <img src="Photo/Clock.png" alt="Clock to work">
+        <p>Пн-Нд 09:00-21:00</p>
+      </div>
+      <div class="contact-info-item">
+        <img src="Photo/WiFi.png" alt="WiFi-password">
+        <p>Wi-Fi: 
+          <span id="wifiPassword" style="cursor: pointer;">34567890</span>
+        </p>
+      </div>
+      <div class="contact-info-item">
+        <img src="Photo/Email.png" alt="Email adress">
+        <p id="emailLink" style="cursor: pointer;">schastiekiev@gmail.com</p>
+      </div>
+    </div>
+    <div class="social_networking">
+      <h2>Ми в соцмережах</h2>
+      <p>
+        <img src="Photo/Instagram.png" alt="Instagram">
+        <a href="https://www.instagram.com/">Instagram</a>
+      </p>
+      <p>
+        <img src="Photo/Facebook.png" alt="Facebook">
+        <a href="https://www.facebook.com/">Facebook</a>
+      </p>
+    </div>
+    <div class="location">
+      <h2>Адреса</h2>
+      <p class="address">
+        <img src="Photo/locate.png" alt="locate">
+        вулиця Степана Рудницького, 17/11, Київ, Україна, 02000
+      </p>
+    </div>       
+    <div class="map">
+      <h2>Мапа</h2>
+      <iframe class="style_FooterMap__T6d7T" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?q=вулиця+Степана+Рудницького,+17/11,+Київ,+Україна,+02000&output=embed" allowfullscreen=""></iframe>
+      <a target="_blank" href="https://maps.google.com/?q=вулиця Степана Рудницького, 17/11, Київ, Україна, 02000" rel="noreferrer">
+        <button class="styles_button___Dvql styles_appearanceStroke__LKd1h style_FooterMapButton__RTxv4">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 3C4.35499 3 3 4.35499 3 6C3 7.64501 4.35499 9 6 9C7.29316 9 8.39514 8.15733 8.8125 7H17C18.1167 7 19 7.88333 19 9C19 10.1167 18.1167 11 17 11H7C4.80267 11 3 12.8027 3 15V16H3.20312C3.65948 17.7064 5.15641 19 7 19H15.1875C15.6049 20.1573 16.7068 21 18 21C19.645 21 21 19.645 21 18C21 16.355 19.645 15 18 15C16.7068 15 15.6049 15.8427 15.1875 17H7C5.88333 17 5 16.1167 5 15C5 13.8833 5.88333 13 7 13H17C18.8436 13 20.3405 11.7064 20.7969 10H21V9C21 6.80267 19.1973 5 17 5H8.8125C8.39514 3.84267 7.29316 3 6 3ZM6 5C6.56413 5 7 5.43587 7 6C7 6.56413 6.56413 7 6 7C5.43587 7 5 6.56413 5 6C5 5.43587 5.43587 5 6 5ZM18 17C18.5641 17 19 17.4359 19 18C19 18.5641 18.5641 19 18 19C17.4359 19 17 18.5641 17 18C17 17.4359 17.4359 17 18 17Z" fill="currentColor"></path>
+            
+          </svg>
+          Отримати розташування
+        </button>
+        </a>
+    </div>    
+  </footer>  
+
+    <script src="script.js"></script>
+</body>
+</html>
