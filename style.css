@@ -371,309 +371,337 @@ a{
   color: #fff; /* Змінюємо колір тексту при наведенні */
 }
 
-/* Медіазапит для екранів шириною менше 768 пікселів */
-@media only screen and (max-width: 768px) {
-  .header-container {
-    height: 20vh;
+/* Media Query for screens up to 1024px */
+@media only screen and (max-width: 1024px) {
+  /* Adjustments for screens up to 1024px */
+  body {
+    font-size: 90%; /* Example: Decrease the default font size */
   }
 
   .navigation ul li {
-    margin-right: 10%;
+    margin-right: 10%; /* Example: Reduce margin for navigation items */
   }
 
   .text-container h1 {
-    font-size: 10vh;
-    letter-spacing: 1vh;
-  }
-.carousel-control {
-    font-size: 2vh;
-    padding: 0.5vh;
+    font-size: 12vh; /* Example: Adjust heading size */
+    letter-spacing: 2vh;
   }
 
-  .carousel-control.prev,
-  .carousel-control.next {
-    left: 0.5vh;
-    right: 0.5vh;
-  }
   .text-container p {
-    font-size: 2.5vh;
+    font-size: 2.5vh; /* Example: Adjust paragraph font size */
     line-height: 2.5vh;
   }
 
   .carousel {
-    height: 50vh;
-  }
-
-
-  .about_us h1 {
-    font-size: 4.5vh;
-    line-height: 5.5vh;
-  }
-
-  .about_us p {
-    font-size: 2vh;
-    line-height: 2.5vh;
-  }
-
-  .breakfast h1 {
-    font-size: 4vh;
-    line-height: 5vh;
-    padding-bottom: 5vh;
-  }
-
-  .breakfast-item {
-    width: 100%;
-    padding-right: 0;
-  }
-
-  .breakfast-item img {
-    width: 100%;
-  }
-
-  .info {
-    flex-direction: column;
-  }
-
-  .contact-info, .social_networking, .location, .map-container {
-    max-width: 100%;
-    margin: 0;
-  }
-
-  .map iframe {
-    width: 100%;
-    height: 30vh;
-  }
-
-  .styles_button___Dvql {
-    padding: 1vh 1.5vh;
-  }
-}
-
-/* Медіазапит для екранів шириною менше 480 пікселів */
-@media only screen and (max-width: 480px) {
-  .header-container {
-    height: 15vh;
-  }
-
-  .text-container h1 {
-    font-size: 8vh;
-    letter-spacing: 0.5vh;
-  }
-
-  .text-container p {
-    font-size: 2vh;
-    line-height: 2vh;
-  }
-
-  .carousel {
-    height: 40vh;
+    height: 60vh; /* Example: Reduce carousel height */
   }
 
   .carousel-control {
-    font-size: 1.8vh;
+    font-size: 2.5vh; /* Example: Adjust carousel control font size */
     padding: 0.5vh;
   }
 
-  .carousel-control.prev,
-  .carousel-control.next {
-    left: 0.5vh;
-    right: 0.5vh;
-  }
   .about_us h1 {
-    font-size: 3.5vh;
-    line-height: 4.5vh;
+    font-size: 4.5vh; /* Example: Adjust about us heading size */
+    line-height: 6vh;
   }
 
   .about_us p {
-    font-size: 1.8vh;
+    font-size: 2vh; /* Example: Adjust about us paragraph font size */
+    line-height: 3vh;
+  }
+
+  .breakfast h1 {
+    font-size: 5vh; /* Example: Adjust breakfast heading size */
+    line-height: 6.5vh;
+    padding-bottom: 6vh; /* Example: Reduce padding */
+  }
+
+  .breakfast-item {
+    width: 100%; /* Example: Make breakfast items full width */
+  }
+
+  .breakfast-item img {
+    width: 100%; /* Example: Make breakfast item images full width */
+  }
+
+  .breakfast-item p {
+    font-size: 2vh; /* Example: Adjust breakfast item paragraph font size */
+    line-height: 2.5vh;
+  }
+
+  .info {
+    padding: 5vh 0; /* Example: Adjust padding for the footer */
+  }
+
+  .contact-info h2 {
+    font-size: 2vh; /* Example: Adjust contact info heading size */
+    line-height: 2.5vh;
+  }
+
+  .contact-info-item img {
+    width: 1.5vh; /* Example: Adjust contact info item image size */
+    height: 1.2vh;
+  }
+
+  .contact-info-item p {
+    font-size: 1.8vh; /* Example: Adjust contact info item paragraph font size */
+    line-height: 2vh;
+  }
+
+  .social_networking h2 {
+    font-size: 2vh; /* Example: Adjust social networking heading size */
+    line-height: 2.5vh;
+  }
+
+  .social_networking img {
+    width: 1.5vh; /* Example: Adjust social networking item image size */
+    height: 1.3vh;
+  }
+
+  .social_networking a {
+    font-size: 1.7vh; /* Example: Adjust social networking item font size */
+    line-height: 2.2vh;
+  }
+
+  .location h2 {
+    font-size: 2vh; /* Example: Adjust location heading size */
+    line-height: 2.5vh;
+  }
+
+  .location p {
+    font-size: 1.5vh; /* Example: Adjust location paragraph font size */
+    line-height: 2vh;
+  }
+
+  .map iframe {
+    width: 100%; /* Example: Make map iframe full width */
+    height: 40vh; /* Example: Adjust map iframe height */
+  }
+
+  .styles_button___Dvql {
+    padding: 1vh 1.5vh; /* Example: Adjust button padding */
+  }
+}
+/* Media Query for screens up to 768px */
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 85%; /* Adjust the default font size for smaller screens */
+  }
+
+  .navigation ul li {
+    margin-right: 8%; /* Adjust margin for navigation items */
+  }
+
+  .text-container h1 {
+    font-size: 10vh; /* Adjust heading size */
+    letter-spacing: 1.5vh;
+  }
+
+  .text-container p {
+    font-size: 2vh; /* Adjust paragraph font size */
+    line-height: 2.2vh;
+  }
+
+  .carousel {
+    height: 50vh; /* Adjust carousel height */
+  }
+
+  .carousel-control {
+    font-size: 2vh; /* Adjust carousel control font size */
+    padding: 0.5vh;
+  }
+
+  .about_us h1 {
+    font-size: 4vh; /* Adjust about us heading size */
+    line-height: 5vh;
+  }
+
+  .about_us p {
+    font-size: 1.8vh; /* Adjust about us paragraph font size */
     line-height: 2.2vh;
   }
 
   .breakfast h1 {
-    font-size: 3.5vh;
-    line-height: 4.5vh;
-    padding-bottom: 4vh;
+    font-size: 4vh; /* Adjust breakfast heading size */
+    line-height: 5vh;
+    padding-bottom: 4vh; /* Adjust padding */
   }
 
   .breakfast-item {
-    width: 100%;
-    padding-right: 0;
+    width: 100%; /* Make breakfast items full width */
   }
 
   .breakfast-item img {
-    width: 100%;
+    width: 100%; /* Make breakfast item images full width */
+  }
+
+  .breakfast-item p {
+    font-size: 1.8vh; /* Adjust breakfast item paragraph font size */
+    line-height: 2vh;
   }
 
   .info {
-    flex-direction: column;
+    padding: 4vh 0; /* Adjust padding for the footer */
   }
 
-  .contact-info, .social_networking, .location, .map-container {
-    max-width: 100%;
-    margin: 0;
+  .contact-info h2 {
+    font-size: 2vh; /* Adjust contact info heading size */
+    line-height: 2.2vh;
   }
 
-  .map iframe {
-    width: 100%;
-    height: 20vh;
+  .contact-info-item img {
+    width: 1.2vh; /* Adjust contact info item image size */
+    height: 1vh;
   }
 
-  .styles_button___Dvql {
-    padding: 0.5vh 1vh;
-    font-size: 1.5vh;
-  }
-}
-/* Медіазапит для екранів шириною менше 1024 пікселів */
-@media only screen and (max-width: 1024px) {
-  .header-container {
-    height: 25vh;
+  .contact-info-item p {
+    font-size: 1.6vh; /* Adjust contact info item paragraph font size */
+    line-height: 1.8vh;
   }
 
-  .navigation ul li {
-    margin-right: 15%;
+  .social_networking h2 {
+    font-size: 1.8vh; /* Adjust social networking heading size */
+    line-height: 2.2vh;
   }
 
-  .text-container h1 {
-    font-size: 12vh;
-    letter-spacing: 2vh;
-  }
- .carousel-control {
-    font-size: 2.5vh;
-    padding: 1vh;
+  .social_networking img {
+    width: 1vh; /* Adjust social networking item image size */
+    height: 0.8vh;
   }
 
-  .carousel-control.prev,
-  .carousel-control.next {
-    left: 1vh;
-    right: 1vh;
-  }
-  .text-container p {
-    font-size: 2.8vh;
-    line-height: 3vh;
+  .social_networking a {
+    font-size: 1.6vh; /* Adjust social networking item font size */
+    line-height: 1.8vh;
   }
 
-  .carousel {
-    height: 60vh;
+  .location h2 {
+    font-size: 2vh; /* Adjust location heading size */
+    line-height: 2.2vh;
   }
 
-  
-  .about_us h1 {
-    font-size: 5.5vh;
-    line-height: 6.5vh;
-  }
-
-  .about_us p {
-    font-size: 2.5vh;
-    line-height: 3vh;
-  }
-
-  .breakfast h1 {
-    font-size: 5vh;
-    line-height: 6vh;
-    padding-bottom: 7vh;
-  }
-
-  .breakfast-item {
-    width: 70vh;
-    padding-right: 10px;
-  }
-
-  .breakfast-item img {
-    width: 70vh;
-  }
-
-  .info {
-    flex-direction: column;
-  }
-
-  .contact-info, .social_networking, .location, .map-container {
-    max-width: 70vh;
-    margin: 0;
+  .location p {
+    font-size: 1.4vh; /* Adjust location paragraph font size */
+    line-height: 1.6vh;
   }
 
   .map iframe {
-    width: 70vh;
-    height: 25vh;
+    width: 100%; /* Make map iframe full width */
+    height: 30vh; /* Adjust map iframe height */
   }
 
   .styles_button___Dvql {
-    padding: 1.5vh 2vh;
+    padding: 0.8vh 1.2vh; /* Adjust button padding */
   }
 }
-/* Медіазапит для екранів шириною від 1025 пікселів */
-@media only screen and (min-width: 1025px) {
-  .header-container {
-    height: 32vh;
+/* Media Query for screens up to 368px */
+@media only screen and (max-width: 368px) {
+  body {
+    font-size: 80%; /* Adjust the default font size for smaller screens */
   }
 
   .navigation ul li {
-    margin-right: 18.5%;
+    margin-right: 5%; /* Adjust margin for navigation items */
   }
 
   .text-container h1 {
-    font-size: 16vh;
-    letter-spacing: 3vh;
+    font-size: 8vh; /* Adjust heading size */
+    letter-spacing: 1vh;
   }
 
   .text-container p {
-    font-size: 3.2vh;
-    line-height: 3.2vh;
+    font-size: 1.8vh; /* Adjust paragraph font size */
+    line-height: 2vh;
   }
 
   .carousel {
-    height: 78vh;
+    height: 40vh; /* Adjust carousel height */
   }
 
   .carousel-control {
-    font-size: 3vh;
-    padding: 1vh;
+    font-size: 1.5vh; /* Adjust carousel control font size */
+    padding: 0.3vh;
   }
 
-  .carousel-control.prev,
-  .carousel-control.next {
-    left: 1vh;
-    right: 1vh;
-  }
   .about_us h1 {
-    font-size: 6.7vh;
-    line-height: 8.2vh;
+    font-size: 3.5vh; /* Adjust about us heading size */
+    line-height: 4vh;
   }
 
   .about_us p {
-    font-size: 3vh;
-    line-height: 3.9vh;
+    font-size: 1.5vh; /* Adjust about us paragraph font size */
+    line-height: 1.8vh;
   }
 
   .breakfast h1 {
-    font-size: 6vh;
-    line-height: 7.7vh;
-    padding-bottom: 9vh;
+    font-size: 3vh; /* Adjust breakfast heading size */
+    line-height: 3.5vh;
+    padding-bottom: 3vh; /* Adjust padding */
   }
 
   .breakfast-item {
-    width: 57vh;
-    padding-right: 20px;
+    width: 100%; /* Make breakfast items full width */
   }
 
   .breakfast-item img {
-    width: 57vh;
+    width: 100%; /* Make breakfast item images full width */
+  }
+
+  .breakfast-item p {
+    font-size: 1.5vh; /* Adjust breakfast item paragraph font size */
+    line-height: 1.8vh;
   }
 
   .info {
-    flex-direction: row;
+    padding: 3vh 0; /* Adjust padding for the footer */
   }
 
-  .contact-info, .social_networking, .location, .map-container {
-    max-width: 32vh;
-    margin: 0 1vh;
+  .contact-info h2 {
+    font-size: 1.8vh; /* Adjust contact info heading size */
+    line-height: 2vh;
+  }
+
+  .contact-info-item img {
+    width: 1vh; /* Adjust contact info item image size */
+    height: 0.8vh;
+  }
+
+  .contact-info-item p {
+    font-size: 1.2vh; /* Adjust contact info item paragraph font size */
+    line-height: 1.4vh;
+  }
+
+  .social_networking h2 {
+    font-size: 1.5vh; /* Adjust social networking heading size */
+    line-height: 1.8vh;
+  }
+
+  .social_networking img {
+    width: 0.8vh; /* Adjust social networking item image size */
+    height: 0.7vh;
+  }
+
+  .social_networking a {
+    font-size: 1.2vh; /* Adjust social networking item font size */
+    line-height: 1.4vh;
+  }
+
+  .location h2 {
+    font-size: 1.5vh; /* Adjust location heading size */
+    line-height: 1.8vh;
+  }
+
+  .location p {
+    font-size: 1vh; /* Adjust location paragraph font size */
+    line-height: 1.2vh;
   }
 
   .map iframe {
-    width: 42.19409282700422vh;
-    height: 13.5vh;
+    width: 100%; /* Make map iframe full width */
+    height: 20vh; /* Adjust map iframe height */
   }
 
   .styles_button___Dvql {
-    padding: 1vh 2.1vh;
+    padding: 0.5vh 1vh; /* Adjust button padding */
   }
 }
