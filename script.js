@@ -30,7 +30,7 @@ function moveCarousel(direction) {
 // Додамо автоматичну зміну слайдів
 var intervalId = setInterval(function() {
   moveCarousel(1); 
-}, 5000); 
+}, 10000); 
 
 // Зупиняємо автоматичну зміну слайдів при наведенні курсора на карусель
 carousel.addEventListener('mouseover', function() {
@@ -41,7 +41,7 @@ carousel.addEventListener('mouseover', function() {
 carousel.addEventListener('mouseleave', function() {
   intervalId = setInterval(function() {
     moveCarousel(1); 
-  }, 5000); 
+  }, 10000); 
 });
 
 
