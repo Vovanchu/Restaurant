@@ -1,18 +1,10 @@
 /* Загальні стилі */
-body {
+body,html{
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif; /* Додавання альтернативного шрифту */
-}
-
-body,html{
+  font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
-}
-
-a{
-  color: black;
-  text-decoration: none;    
-  cursor: pointer;
+  cursor: default;
 }
 
 /* Стилі для контейнера з логотипом та соцмережами */
@@ -62,7 +54,7 @@ a{
 .navigation ul li a {
   color: #525151;
   text-decoration: none;
-  font-family: 'Inter';
+  font-family: 'Calibri';
   font-style: normal;
   font-weight: 500;
   font-size: 2vh;
@@ -126,6 +118,8 @@ a{
   margin-top: 17%;
   margin-right: 2vh;
   margin-left: 2vh;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
 }
 
 .carousel-control-prev,
@@ -133,12 +127,12 @@ a{
   width: 50px !important; 
   height: 50px !important;
 
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(29, 26, 26, 0.3);
 }
 
 .carousel-control-prev-icon,
@@ -182,7 +176,6 @@ a{
   background-size: cover;
   height: 30vh;
   border-bottom: solid;
-
 }
 
 .about_us h1{
@@ -307,6 +300,14 @@ a{
   color: #0E0D0D;
 }
 
+.contact-info-item a {
+  color: black;
+}
+
+.contact-info-item a:hover {
+  color: black;
+}
+
 /*social_networking*/
 .social_networking h2{
   font-family: 'Montserrat';
@@ -332,6 +333,10 @@ a{
   line-height: 2.3vh;
   letter-spacing: 0.1em;
 
+  color: #000000;
+}
+
+.social_networking a:hover{
   color: #000000;
 }
 
@@ -361,15 +366,19 @@ a{
 
   color: #0E0D0D;
 }
+
 .contact-info, .social_networking, .location, .map-container {
   flex: 1;
   max-width:32vh;
-  margin: 0 1vh;
+  margin: 0 3vh;
+  margin-top: 2vh;
 }
 
 /*Map*/
 .map {
   position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 .map iframe {
@@ -383,7 +392,7 @@ a{
 .styles_button___Dvql {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 0.7vh;
   z-index: 1;
   background-color: transparent;
   border: 2px solid #000;
@@ -609,77 +618,5 @@ a{
 
   .styles_button___Dvql {
     padding: 1.5vh 2vh;
-  }
-}
-
-/* Медіазапит для екранів шириною від 1025 пікселів */
-@media only screen and (min-width: 1025px) {
-  .header-container {
-    height: 32vh;
-  }
-
-  .navigation ul li {
-    margin-right: 18.5%;
-  }
-
-  .text-container h1 {
-    font-size: 16vh;
-    letter-spacing: 3vh;
-  }
-
-  .text-container p {
-    font-size: 3.2vh;
-    line-height: 3.2vh;
-  }
-
-  .carousel {
-    height: 78vh;
-  }
-
-  .carousel-control {
-    font-size: 3vh;
-  }
-
-  .about_us h1 {
-    font-size: 6.7vh;
-    line-height: 8.2vh;
-  }
-
-  .about_us p {
-    font-size: 3vh;
-    line-height: 3.9vh;
-  }
-
-  .breakfast h1 {
-    font-size: 6vh;
-    line-height: 7.7vh;
-    padding-bottom: 9vh;
-  }
-
-  .breakfast-item {
-    width: 57vh;
-    padding-right: 20px;
-  }
-
-  .breakfast-item img {
-    width: 57vh;
-  }
-
-  .info {
-    flex-direction: row;
-  }
-
-  .contact-info, .social_networking, .location, .map-container {
-    max-width: 32vh;
-    margin: 0 1vh;
-  }
-
-  .map iframe {
-    width: 42.19409282700422vh;
-    height: 13.5vh;
-  }
-
-  .styles_button___Dvql {
-    padding: 1vh 2.1vh;
   }
 }
