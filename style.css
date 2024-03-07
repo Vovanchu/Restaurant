@@ -442,36 +442,111 @@ body,html{
 /* Медіазапит для екранів шириною менше 480 пікселів */
 @media only screen and (max-width: 480px) {
   .header-container {
-    height: 15vh;
+    height: 20vh;
+  }
+
+  .navigation {
+    height: 3vh;
+  }
+
+  .navigation ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    flex-wrap: wrap;
+  }
+
+  .navigation ul li {
+    width: 70%;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .navigation ul li a {
+    font-size: 2vh;
+    line-height: 2.5vh;
+  }
+  .text-container {
+    text-align: center;
   }
 
   .text-container h1 {
-    font-size: 8vh;
-    letter-spacing: 0.5vh;
+    font-size: 6vh;
+    letter-spacing: 1.5vh;
   }
 
   .text-container p {
     font-size: 2vh;
     line-height: 2vh;
+    padding-top: 1vh;
   }
 
   .carousel {
-    height: 40vh;
+    width: 100%;
+    height: 50vh; /* Змініть висоту за необхідністю */
   }
 
-  .carousel-control {
-    font-size: 4vw;
-    padding: 2vw;
+  .carousel-inner img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .carousel button {
+    margin-top: 5%; /* Змініть відступ за необхідністю */
+    margin-right: 2vh;
+    margin-left: 2vh;
+    background: rgba(109, 109, 109, 0.5);
+    border: none;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5.3vh !important;
+    height: 5.3vh !important;
+    background-color: rgba(128, 128, 128, 0.5);
+  }
+
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    background-color: rgba(29, 26, 26, 0.5);
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    height: 2vh;
+    width: 1vh;
+  }
+
+  .carousel-control-prev-icon:before,
+  .carousel-control-next-icon:before {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+  }
+
+  .carousel-item {
+    transition: opacity 0.6s ease; /* Встановлюємо анімацію переходу між слайдами */
+  }
+
+  .carousel-item img {
+    display: block;
+    margin: 0 auto; /* Вирівнюємо фото по центру */
+  }
+
+  .about_us {
+    height: 20vh; /* Adjust height as needed */
+    padding: 2vh 0; /* Add vertical padding */
   }
 
   .about_us h1 {
-    font-size: 3.5vh;
-    line-height: 4.5vh;
+    font-size: 5vh; /* Adjust font size */
+    line-height: 6vh; /* Adjust line height */
+    padding-top: 2vh; /* Adjust padding top */
   }
 
   .about_us p {
-    font-size: 1.8vh;
-    line-height: 2.2vh;
+    font-size: 2vh; /* Adjust font size */
+    line-height: 3vh; /* Adjust line height */
   }
 
   .breakfast h1 {
@@ -486,22 +561,33 @@ body,html{
   }
 
   .breakfast-item img {
-    width: 100%;
-  }
-
-  .info {
+    display: flex;
     flex-direction: column;
-  }
-
-  .contact-info, .social_networking, .location, .map-container {
-    max-width: 100%;
-    margin: 0;
-  }
-
-  .map iframe {
+    justify-content: space-between;
     width: 100%;
-    height: 20vh;
   }
+
+   .info {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .contact-info,
+  .location,
+  .map-container {
+    flex: unset;
+    max-width: 100%;
+    margin: 0 auto 5vh;
+  }
+.social_networking{
+  position: absolute;
+  right: 0;
+}
+  .map iframe {
+    width: 70%;
+    height: 30vh;
+  }
+
 
   .styles_button___Dvql {
     padding: 0.5vh 1vh;
@@ -512,41 +598,98 @@ body,html{
 /* Медіазапит для екранів шириною менше 768 пікселів */
 @media only screen and (max-width: 768px) {
   .header-container {
-    height: 20vh;
+    height: 24vh;
+  }
+
+  .navigation {
+    height: 3.5vh;
   }
 
   .navigation ul li {
-    margin-right: 10%;
+    width: 70%;
+    margin-bottom: 0;
+    max-width: 10%; /* Встановіть бажану максимальну ширину */
+  }
+
+  .navigation ul li a {
+    font-size: 1vh;
+    line-height: 2.8vh;
+  }
+
+  .text-container {
+    text-align: center;
   }
 
   .text-container h1 {
     font-size: 10vh;
-    letter-spacing: 1vh;
+    letter-spacing: 2vh;
   }
 
   .text-container p {
     font-size: 2.5vh;
-    line-height: 2.5vh;
+    line-height: 3vh;
+    padding-top: 1vh;
   }
 
   .carousel {
-    height: 50vh;
+    width: 100%;
+    height: 50vh; /* Змініть висоту за необхідністю */
   }
 
-  .carousel-control {
-    font-size: 2vh;
+  .carousel-inner img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .carousel button {
+    margin-top: 5%; /* Змініть відступ за необхідністю */
+    margin-right: 2vh;
+    margin-left: 2vh;
+    background: rgba(109, 109, 109, 0.5);
+    border: none;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5.3vh !important;
+    height: 5.3vh !important;
+    background-color: rgba(128, 128, 128, 0.5);
+  }
+
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    background-color: rgba(29, 26, 26, 0.5);
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    height: 2vh;
+    width: 1vh;
+  }
+
+  .carousel-control-prev-icon:before,
+  .carousel-control-next-icon:before {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+  }
+
+  .about_us {
+    height: 35vh; /* Adjust height as needed */
   }
 
   .about_us h1 {
-    font-size: 4.5vh;
-    line-height: 5.5vh;
+    font-size: 6vh; /* Adjust font size */
+    line-height: 7vh; /* Adjust line height */
   }
 
   .about_us p {
-    font-size: 2vh;
-    line-height: 2.5vh;
+    font-size: 2.8vh; /* Adjust font size */
+    line-height: 3.5vh; /* Adjust line height */
   }
-
+  .breakfast {
+    flex-direction: column; /* Stack items vertically */
+  }
+  
   .breakfast h1 {
     font-size: 4vh;
     line-height: 5vh;
@@ -554,30 +697,41 @@ body,html{
   }
 
   .breakfast-item {
-    width: calc(50% - 20px);
-    padding-right: 0;
+    align-items: center;
   }
 
   .breakfast-item img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
   }
 
   .info {
     flex-direction: column;
+    justify-content: space-between;
   }
 
-  .contact-info, .social_networking, .location, .map-container {
+  .contact-info,
+  .location,
+  .map-container {
+    flex: unset;
     max-width: 100%;
-    margin: 0;
+    margin: 0 auto 5vh;
   }
-
+.social_networking{
+  position: absolute;
+  right: 0;
+}
   .map iframe {
-    width: 100%;
+    width: 70%;
     height: 30vh;
   }
 
+
   .styles_button___Dvql {
-    padding: 1vh 1.5vh;
+    padding: 0.5vh 1vh;
+    font-size: 1.5vh;
   }
 }
 
@@ -602,11 +756,46 @@ body,html{
   }
 
   .carousel {
-    height: 60vh;
+    width: 100%;
+    height: 100%;
   }
 
-  .carousel-control {
-    font-size: 2.5vh;
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .carousel button {
+    margin-top: 17%;
+    margin-right: 2vh;
+    margin-left: 2vh;
+    background: rgba(109, 109, 109, 0.5);
+    border: none;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5.3vh !important;
+    height: 5.3vh !important;
+    background-color: rgba(128, 128, 128, 0.5);
+  }
+
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    background-color: rgba(29, 26, 26, 0.5);
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    height: 2vh;
+    width: 1vh;
+  }
+
+  .carousel-control-prev-icon:before,
+  .carousel-control-next-icon:before {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
   }
 
   .about_us h1 {
