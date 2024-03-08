@@ -41,7 +41,7 @@ body,html {
 /* Навігація */
 .navbar{
     width: 100%;
-    background-image: url(Photo/Rectangle\ 66.png);
+    background-image: url(Photo_for_gallery/Rectangle\ 66.png);
     background-position: center center; 
     background-repeat: no-repeat;     
     background-size: cover;
@@ -106,7 +106,7 @@ a.nav-item {
 
 .info{
     min-width: 100%;
-    background-image: url(Photo/footer.jpg);
+    background-image: url(Photo_for_gallery/footer.jpg);
     background-position: center center; 
     background-repeat: no-repeat;     
     background-size: cover;
